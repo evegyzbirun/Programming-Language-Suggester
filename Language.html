@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-  <title>Character Quiz</title>
+  <title>Programming Language Suggester</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
@@ -13,23 +13,19 @@
   <div>
     <h1>5 survey questions.</h1>
     <form id="quiz">
-
-
-
-
       <div class="question1">
         <label for="q1"></label>
         <p id="q1">Question 1: What would you like to create?</p>
 
         <div class="radio">
           <label>
-            <input type="radio" name="type1" value="qs1answer1" checked>
+            <input type="radio" name="type1" value="qsanswer1" checked>
             Phone apps.
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="type1" value="qs2answer2" checked>
+            <input type="radio" name="type1" value="qsanswer2" checked>
             Pc programs.
           </label>
         </div>
@@ -41,13 +37,13 @@
 
         <div class="radio">
           <label>
-            <input type="radio" name="type2" value="qs1answer1" checked>
+            <input type="radio" name="type2" value="qsanswer1" checked>
             Google.
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="type2" value="qs2answer2" checked>
+            <input type="radio" name="type2" value="qsanswer2" checked>
             Robinhood.
           </label>
         </div>
@@ -59,13 +55,13 @@
 
         <div class="radio">
           <label>
-            <input type="radio" name="type3" value="qs1answer1" checked>
+            <input type="radio" name="type3" value="qsanswer1" checked>
             A range of scientific applications.
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="type3" value="qs2answer2" checked>
+            <input type="radio" name="type3" value="qsanswer2" checked>
             Web development, user-facing functionality, and servers.
           </label>
         </div>
@@ -78,13 +74,13 @@
 
         <div class="radio">
           <label>
-            <input type="radio" name="type4" value="qs1answer1" checked>
+            <input type="radio" name="type4" value="qsanswer1" checked>
             more than 10 hrs.
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="type4" value="qs2answer2" checked>
+            <input type="radio" name="type4" value="qsanswer2" checked>
             more than 20 hrs.
           </label>
         </div>
@@ -94,14 +90,14 @@
       <div class="question5">
         <label for="q5"></label>
         <p id="q5">Question 5: What salary do you want? </p>
-        <label for="income">Salary</label>
-        <input id="income" name="typ5" type="text">
+        <label for="income">Salary(depend of company)</label>
+        <input id="income" name="type5" type="text">
         </label>
       </div>
   </div>
   <button type="submit" class="btn">Submit</button>
   </form>
-
+  <div id="output"></div>
 
 
 
