@@ -7,23 +7,27 @@ $(document).ready(function () {
     const type4 = $("input:radio[name=type4]:checked").val();
     const type5 = $("input:radio[name=type5]:checked").val();
 
-    let result;
-    if (type1 === "qs1answer1" && type2 === ("qs2answer1" || "qs2answer2") && type3 === "qs3answer2" && type4 === "qs4answer1" && 50000 <= type5 <= 70000) {
-      result = "JavaScript"
 
-    } else if (type1 === "qs1answer2" && type2 === "qs2answer1" && type3 === "qs3answer1" && type4 === "qs4answer2" && 70000 < type5 || type5 <= 120000) {
-      result = "Python"
-      if (type5 = 130000)
-        result = "Wrong answer, try again."
+    if (type1 == "qs1answer1" && (type2 == "qs2answer1" || type2 == "qs2answer2") && type3 === "qs3answer2" && type4 === "qs4answer1" && (50000 <= type5 <= 70000)) {
+      $(".JavaScript").show();
+      $(".Python").hide();
+      $(".Swift").hide();
+
+    } else if (type1 == "qs1answer2" && type2 === "qs2answer1" && type3 === "qs3answer1" && type4 === "qs4answer2" && 70000 < type5 <= 120000) {
+      $(".Python").show();
+      $(".Swift").hide();
+      $(".JavaScript").hide();
 
 
 
-    } else if (type1 === "qs1answer1" && type2 === "qs2answer1" && type3 === ("qs3answer1" || "qs3answer2") && type4 === ("qs4answer1" || "qs4answer2") && 30000 <= type5 < 50000) {
-      result = "Swift"
+    } else if (type1 == "qs1answer1" && type2 === "qs2answer1" && type3 === "qs3answer1" && type4 === "qs4answer1" && 30000 <= type5 < 50000) {
+      $(".Swift").show();
+      $(".Python").hide();
+      $(".JavaScript").hide();
+
     }
+    $("#output").text();
 
-    $("#output").text(result);
-    $("#result").toggle();
 
 
   });
