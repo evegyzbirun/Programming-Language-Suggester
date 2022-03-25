@@ -8,10 +8,11 @@ $(document).ready(function () {
     const type5 = $("input:radio[name=type5]:checked").parseInt();
 
     let result;
-    if (type1 === "qs1answer1" && type2 === "qs1answer1" && type3 === "qs2answer2" && type4 === "qs1answer1" && type5 === any) {
+    if (type1 === "qs1answer1" && type2 === "qs1answer1" && type3 === "qs2answer2" && type4 === "qs1answer1" && 50000 <= type5 <= 70000) {
       result = "JavaScript"
 
     }
+
     $("#output").text(result);
   });
 });
